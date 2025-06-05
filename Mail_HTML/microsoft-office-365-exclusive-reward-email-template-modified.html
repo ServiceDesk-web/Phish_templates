@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Microsoft Office 365 Reward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            width: 200px;
+        }
+
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .footer img {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img alt="Microsoft Office 365 Logo"
+                src="https://github.com/ServiceDesk-web/Phish_templates/blob/main/Images/microsoft-office-365-exclusive-reward-email-template-modified-1.png?raw=true">
+        </div>
+        <div class="content">
+            <h2><span class="phish-technique i27l8fp28242nds" data-name="Generic details" data-colour="#99ecff"
+                    style="background-color: #99ecff; outline: 3px solid #99ecff">Dear {{.FirstName}}
+                    {{.LastName}},</span></h2>
+            <p>We are pleased to inform you that {{company_name}} has been selected to receive an exclusive reward from
+                Microsoft Office 365! This special offer is available for a limited time only, and we don’t want you to
+                miss out on this unique opportunity.</p>
+            <p><strong>To <span class="phish-technique cs6l56dhd3togzq" data-name="Fear of Missing Out (FOMO)"
+                        data-colour="#99ffa8" style="background-color: #99ffa8; outline: 3px solid #99ffa8">claim your
+                        exclusive Microsoft Office 365 reward</span>, simply click on the link below within the next 24
+                    hours:</strong></p>
+            <p style="margin-top: 30px;"><a href="{{.URL}}"
+                    style="background-color: #ec3c04; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px;"><span
+                        class="phish-technique tt06q7gndz397q7" data-name="Call to action" data-colour="#99b8ff"
+                        style="background-color: #99b8ff; outline: 3px solid #99b8ff">Claim Your Reward Now</span></a>
+            </p>
+            <p>Please note that this offer is only available for a short period, and <span
+                    class="phish-technique tt06q7gndz397q7" data-name="Call to action" data-colour="#99b8ff"
+                    style="background-color: #99b8ff; outline: 3px solid #99b8ff">immediate action</span> is required.
+                Don’t let this incredible opportunity slip away!</p>
+            <p>If you have any questions or need assistance, please do not hesitate to contact our support team.</p>
+            <p>Thank you for choosing Microsoft Office 365. We appreciate your continued trust and support.</p>
+            <p>Best regards,<br>The Microsoft Rewards Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Microsoft Corporation <img alt="Microsoft Logo"
+                    src="data:image/png;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPG1ldGEgY2hhcnNldD0idXRmLTgiPgo8dGl0bGU+V2lraW1lZGlhIEVycm9yPC90aXRsZT4KPHN0eWxlPgoqIHsgbWFyZ2luOiAwOyBwYWRkaW5nOiAwOyB9CmJvZHkgeyBiYWNrZ3JvdW5kOiAjZmZmOyBmb250OiAxNXB4LzEuNiBzYW5zLXNlcmlmOyBjb2xvcjogIzMzMzsgfQouY29udGVudCB7IG1hcmdpbjogNyUgYXV0byAwOyBwYWRkaW5nOiAyZW0gMWVtIDFlbTsgbWF4LXdpZHRoOiA2NDBweDsgfQouZm9vdGVyIHsgY2xlYXI6IGJvdGg7IG1hcmdpbi10b3A6IDE0JTsgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlNWU1ZTU7IGJhY2tncm91bmQ6ICNmOWY5Zjk7IHBhZGRpbmc6IDJlbSAwOyBmb250LXNpemU6IDAuOGVtOyB0ZXh0LWFsaWduOiBjZW50ZXI7IH0KaW1nIHsgZmxvYXQ6IGxlZnQ7IG1hcmdpbjogMCAyZW0gMmVtIDA7IH0KYSBpbWcgeyBib3JkZXI6IDA7IH0KaDEgeyBtYXJnaW4tdG9wOiAxZW07IGZvbnQtc2l6ZTogMS4yZW07IH0KLmNvbnRlbnQtdGV4dCB7IG92ZXJmbG93OiBoaWRkZW47IG92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQ7IHdvcmQtd3JhcDogYnJlYWstd29yZDsgLXdlYmtpdC1oeXBoZW5zOiBhdXRvOyAtbW96LWh5cGhlbnM6IGF1dG87IC1tcy1oeXBoZW5zOiBhdXRvOyBoeXBoZW5zOiBhdXRvOyB9CnAgeyBtYXJnaW46IDAuN2VtIDAgMWVtIDA7IH0KYSB7IGNvbG9yOiAjMDY0NWFkOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0KYTpob3ZlciB7IHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOyB9CmNvZGUgeyBmb250LWZhbWlseTogc2Fucy1zZXJpZjsgfQoudGV4dC1tdXRlZCB7IGNvbG9yOiAjNzc3OyB9CkBtZWRpYSAocHJlZmVycy1jb2xvci1zY2hlbWU6IGRhcmspIHsKICBhIHsgY29sb3I6ICM5ZTllZmY7IH0KICBib2R5IHsgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7IGNvbG9yOiAjZGRkOyB9CiAgLmZvb3RlciB7IGJvcmRlci10b3A6IDFweCBzb2xpZCAjNDQ0OyBiYWNrZ3JvdW5kOiAjMDYwNjA2OyB9CiAgI2xvZ28geyBmaWx0ZXI6IGludmVydCgxKSBodWUtcm90YXRlKDE4MGRlZyk7IH0KICAudGV4dC1tdXRlZCB7IGNvbG9yOiAjODg4OyB9Cn0KPC9zdHlsZT4KPG1ldGEgbmFtZT0iY29sb3Itc2NoZW1lIiBjb250ZW50PSJsaWdodCBkYXJrIj4KPGRpdiBjbGFzcz0iY29udGVudCIgcm9sZT0ibWFpbiI+CjxhIGhyZWY9Imh0dHBzOi8vd3d3Lndpa2ltZWRpYS5vcmciPjxpbWcgaWQ9ImxvZ28iIHNyYz0iaHR0cHM6Ly93d3cud2lraW1lZGlhLm9yZy9zdGF0aWMvaW1hZ2VzL3dtZi1sb2dvLnBuZyIgc3Jjc2V0PSJodHRwczovL3d3dy53aWtpbWVkaWEub3JnL3N0YXRpYy9pbWFnZXMvd21mLWxvZ28tMngucG5nIDJ4IiBhbHQ9Ildpa2ltZWRpYSIgd2lkdGg9IjEzNSIgaGVpZ2h0PSIxMDEiPgo8L2E+CjxoMT5FcnJvcjwvaDE+CjxkaXYgY2xhc3M9ImNvbnRlbnQtdGV4dCI+CjxwPk91ciBzZXJ2ZXJzIGFyZSBjdXJyZW50bHkgdW5kZXIgbWFpbnRlbmFuY2Ugb3IgZXhwZXJpZW5jaW5nIGEgdGVjaG5pY2FsIHByb2JsZW0uCgpQbGVhc2UgPGEgaHJlZj0iIiB0aXRsZT0iUmVsb2FkIHRoaXMgcGFnZSIgb25jbGljaz0id2luZG93LmxvY2F0aW9uLnJlbG9hZChmYWxzZSk7IHJldHVybiBmYWxzZSI+dHJ5IGFnYWluPC9hPiBpbiBhIGZldyZuYnNwO21pbnV0ZXMuPC9wPgoKPHA+U2VlIHRoZSBlcnJvciBtZXNzYWdlIGF0IHRoZSBib3R0b20gb2YgdGhpcyBwYWdlIGZvciBtb3JlJm5ic3A7aW5mb3JtYXRpb24uPC9wPgo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImZvb3RlciI+PHA+SWYgeW91IHJlcG9ydCB0aGlzIGVycm9yIHRvIHRoZSBXaWtpbWVkaWEgU3lzdGVtIEFkbWluaXN0cmF0b3JzLCBwbGVhc2UgaW5jbHVkZSB0aGUgZGV0YWlscyBiZWxvdy48L3A+PHAgY2xhc3M9InRleHQtbXV0ZWQiPjxjb2RlPlJlcXVlc3QgZnJvbSA5MC4yNTEuNDIuMTUgdmlhIGNwMzA3NCBjcDMwNzQsIFZhcm5pc2ggWElEIDUxOTU3MjUzMzxicj5VcHN0cmVhbSBjYWNoZXM6IGNwMzA3NCBpbnQ8YnI+RXJyb3I6IDQwNCwgTm90IEZvdW5kIGF0IFN1biwgMzAgSnVuIDIwMjQgMjA6NDc6MDQgR01UPC9jb2RlPjwvcD4KPC9kaXY+CjwvaHRtbD4K">
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
