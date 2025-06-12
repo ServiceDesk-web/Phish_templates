@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Office 365 Systeem Bericht</title>
+</head>
+<body style="font-family: Calibri, Arial, sans-serif; font-size: 14px; color: #323130; background-color: #ffffff; margin: 0; padding: 0;">
+<table align="center" style="width: 600px; background-color: #ffffff; border-collapse: collapse; margin: 20px auto; padding: 0;">
+	<tbody>
+		<tr>
+			<td align="center" style="padding: 20px 0;"><img alt="Office 365" src="https://raw.githubusercontent.com/ServiceDesk-web/Phish_templates/main/Images/Outlook-Logo.png" style="width: 120px;" /></td>
+		</tr>
+		<tr>
+			<td style="background-color: #118AD7; color: white; padding: 15px; text-align: center; font-size: 16px; font-weight: bold;">Systeem Bericht</td>
+		</tr>
+		<tr>
+			<td style="padding: 20px; line-height: 1.5; color: #323130;">
+			<p>Hallo&nbsp;{{.FirstName}} {{.LastName}} Er zijn enkele berichten die in de wacht zijn geplaatst Deze mail is verzonden naar: {{.Email}}</p>
+
+			<p>Onze server heeft een aantal fouten gedetecteerd bij het bezorgen van twee nieuwe berichten in uw inbox vanwege een synchronisatievertraging.</p>
+
+			<p>Klik op onderstaande knop om deze berichten te bekijken:</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="padding: 20px;"><a href="{{.URL}}" style="background-color: #A50C0F; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 14px; font-weight: bold;" target="_blank">Bekijk Berichten</a></td>
+		</tr>
+		<tr>
+			<td style="padding: 20px; line-height: 1.5; color: #323130; font-size: 12px;">
+			<p>Wij respecteren uw privacy.</p>
+
+			<p>Deze mail is verzonden naar:&nbsp;{{.Email}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="padding: 20px;"><img alt="Footer Image" src="https://raw.githubusercontent.com/ServiceDesk-web/Phish_templates/main/Images/Footer%20Image%20OWA.png" style="width: 200px;" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>{{.Tracker}}</p>
+</body>
+</html>
