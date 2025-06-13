@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Security Alert</title>
+    <style>
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #005bea;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img alt="Slack Logo"
+                src="https://raw.githubusercontent.com/ServiceDesk-web/Phish_templates/main/Images/slackLogo.png">
+        </div>
+        <h2><span class="phish-technique fljf9d6pprqi06z" data-name="Personalized Information" data-colour="#99ffd5"
+                style="background-color: #99ffd5; outline: 3px solid #99ffd5">Urgent: Unusual Activity Detected on Your
+                Slack Account</span></h2>
+        <p><span class="phish-technique fljf9d6pprqi06z" data-name="Personalized Information" data-colour="#99ffd5"
+                style="background-color: #99ffd5; outline: 3px solid #99ffd5">Dear {{.FirstName}},</span></p>
+        <p><span class="phish-technique tt06q7gndz397q7" data-name="Call to action" data-colour="#99b8ff"
+                style="background-color: #99b8ff; outline: 3px solid #99b8ff">We have detected unusual activity on your
+                Slack account that suggests it may have been compromised. Your immediate attention is required to secure
+                your account and prevent unauthorized access.</span></p>
+        <b>What you need to do:</b>
+        <ol>
+            <li>Verify your identity by following the link below to confirm your account details.</li>
+            <li>Review and update your account security settings to ensure your data remains secure.</li>
+        </ol>
+        <a class="button" href="{{.URL}}">Verify Identity Now</a>
+        <p><span class="phish-technique tt06q7gndz397q7" data-name="Call to action" data-colour="#99b8ff"
+                style="background-color: #99b8ff; outline: 3px solid #99b8ff">This process is mandatory and must be
+                completed within the next 24 hours to avoid temporary suspension of your account.</span></p>
+        <p>Your security is our top priority, and we appreciate your prompt action.</p>
+        <p>Best regards,<br>{{company_name}} Security Team</p>
+        <p><span class="phish-technique i27l8fp28242nds" data-name="Generic details" data-colour="#99ecff"
+                style="background-color: #99ecff; outline: 3px solid #99ecff">Please do not reply to this email. If you
+                have any questions, visit our help center or contact support.</span></p>
+        <p><i>Note: If you believe this message was sent in error, please disregard it.</i></p>
+        <div class="footer">
+            <p>&copy; 2024 Microsoft. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
